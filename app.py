@@ -5,7 +5,8 @@ from PIL import Image
 
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('vegetable_model.h5')
+    #model = tf.keras.models.load_model('vegetable_model.h5')
+    model = tf.keras.models.load_model('vegetable_model.keras')
     return model
 
 model = load_model()
